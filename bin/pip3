@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/ant0n/Dropbox/My Mac (Antons-Mac-mini.attlocal.net)/Documents/Repos/apartment_finder/bin/python3.9" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
